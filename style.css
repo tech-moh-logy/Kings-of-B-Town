@@ -143,11 +143,34 @@ Adjust the line height to prevent text from overlapping or crowding. */
 }
 
 
+/* Updated CSS for a luxurious title with gradient letters */
+
+.title {
+  font-family: 'Playfair Display', serif; /* Apply the Playfair Display font */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: linear-gradient(135deg, #ffdb58, #ffcd38); /* Adjust gradient colors as needed */
+  color: transparent; /* Make text transparent */
+  text-align: center;
+  font-size: 48px; /* Adjust font size as needed */
+  padding: 20px 0;
+  z-index: 1000;
+  -webkit-background-clip: text; /* Apply gradient to text */
+  background-clip: text; /* Apply gradient to text */
+  /* Add text shadow */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adjust shadow size and color as needed */
+}
+
 footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
   background: linear-gradient(135deg, #000000, #333333);
   color: rgb(192, 181, 181);
   font-size: .675rem;
-  justify-content: center;
   text-align: center;
   padding: 20px;
 }
